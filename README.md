@@ -23,13 +23,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot-desktop.png)
+![](./screenshot-desktop.PNG)
 ![](./screenshot-mobile.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/TSPraneeth/stats-preview-card]
 
 ## My process
 
