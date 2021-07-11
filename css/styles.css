@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+body
+{
+    margin: 0;
+    color: white;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.card-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "text img";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: hsl(244, 38%, 16%);
+    border-radius: 7px;
+}
+
+.text-part
+{
+    grid-area: text;
+    padding: 5% 16% 5% 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-areas:
+        "heading heading heading"
+        "desc desc desc"
+        "one two three";
+}
+
+.heading
+{
+    grid-area: heading;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+#insights
+{
+    color: hsl(277, 64%, 61%);
+}
+
+.description
+{
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 11px;
+    grid-area: desc;
+}
+
+.one
+{
+    grid-area: one;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.two
+{
+    grid-area: two;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.three
+{
+    grid-area: three;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+.desc_text
+{
+    margin-top: 3px;
+    font-size: 10px;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
+.image-part
+{
+    grid-area: img;
+    background-image: linear-gradient( hsla(277, 94%, 30%,0.5), hsla(277, 94%, 30%,0.5)),url(../images/image-header-desktop.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+@media screen and (max-width:768px) 
+{
+  .card-container
+  {
+    grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr;
+      grid-template-areas: 
+        "img"
+        "text";
+        position: unset;
+        transform: none;
+        margin: 20% 5%;
+  }  
+
+  .text-part
+  {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+    "heading"
+    "desc"
+    "one"
+    "two"
+    "three";
+    text-align: center;
+
+  }
+
+  .image-part
+  {
+    border-top-left-radius: 7px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .one,.two,.three
+  {
+      margin-bottom:0;
+  }
+}
+
